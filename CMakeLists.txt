@@ -77,7 +77,7 @@ find_package(CXX17 REQUIRED COMPONENTS optional)
 find_package(Filesystem REQUIRED COMPONENTS ghc Final Experimental)
 
 find_package(X11)
-if(X11_FOUND AND X11_Xi_FOUND)
+if(X11_FOUND AND X11_Xi_FOUND AND NOT APPLE)
 	add_definitions (-DX11_ENABLED)
 	add_includes_ldflags ("${X11_X11_LIB}" "${X11_INCLUDE_DIR}")
 	add_includes_ldflags ("${X11_Xi_LIB}" "${X11_Xi_INCLUDE_PATH}")
