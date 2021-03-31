@@ -41,7 +41,7 @@ else
     rm -rf /tmp/macports
     mkdir /tmp/macports
     pushd /tmp/macports
-    macportsversion=2.6.3
+    macportsversion=2.6.4
     curl https://distfiles.macports.org/MacPorts/MacPorts-$macportsversion.tar.gz -O
     tar xvzf Macports-$macportsversion.tar.gz
     cd Macports-$macportsversion
